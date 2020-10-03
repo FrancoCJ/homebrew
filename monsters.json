@@ -1,1 +1,222 @@
-
+{
+	"name": "Voaraghamanthar",
+	"source": "",
+	"page": 0,
+	"size": "H",
+	"type": "dragon",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 19,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 195,
+		"formula": "17d12 + 85"
+	},
+	"speed": {
+		"walk": 40,
+		"fly": 80,
+		"swim": 40
+	},
+	"str": 23,
+	"dex": 14,
+	"con": 21,
+	"int": 14,
+	"wis": 13,
+	"cha": 17,
+	"save": {
+		"dex": "+7",
+		"con": "+10",
+		"wis": "+6",
+		"cha": "+8"
+	},
+	"skill": {
+		"perception": "+11",
+		"stealth": "+7"
+	},
+	"senses": [
+		"blindsight 60 ft.",
+		"darkvision 120 ft."
+	],
+	"passive": 21,
+	"immune": [
+		"acid"
+	],
+	"languages": [
+		"Common",
+		"Draconic"
+	],
+	"cr": "14",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"The Voaraghamanthar is a 8th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The Voaraghamanthar has the following spells prepared:"
+			],
+			"spells": {
+				"0": {
+					"spells": [
+						"{@spell Dancing Lights}",
+						"{@spell Mind Sliver|UASorcererAndWarlock}",
+						"{@spell Minor Illusion}",
+						"{@spell Mold Earth|XGE}"
+					]
+				},
+				"1": {
+					"slots": 4,
+					"spells": [
+						"{@spell Faerie Fire}",
+						"{@spell Hex}",
+						"{@spell Command}",
+						"{@spell Identify}",
+						"{@spell Shield}"
+					]
+				},
+				"2": {
+					"slots": 3,
+					"spells": [
+						"{@spell Heat Metal}",
+						"{@spell Mirror Image}",
+						"{@spell Alter Self}",
+						"{@spell Darkness}"
+					]
+				},
+				"3": {
+					"slots": 3,
+					"spells": [
+						"{@spell Dispel Magic}",
+						"{@spell Counterspell}"
+					]
+				},
+				"4": {
+					"slots": 2,
+					"spells": [
+						"{@spell Banishment}"
+					]
+				}
+			},
+			"ability": "cha"
+		}
+	],
+	"trait": [
+		{
+			"name": "Amphibious",
+			"entries": [
+				"The dragon can breathe air and water."
+			]
+		},
+		{
+			"name": "Legendary Resistance (3/Day)",
+			"entries": [
+				"If the dragon fails a saving throw, it can choose to succeed instead."
+			]
+		},
+		{
+			"name": "Items",
+			"entries": [
+				"Dust of Disappearance",
+				"Ring of Mind Shielding six doses of air spores portable hole three packets of dust of disappearance"
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+			]
+		},
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage plus 4 ({@damage 1d8}) acid damage."
+			]
+		},
+		{
+			"name": "Claw",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+			]
+		},
+		{
+			"name": "Tail",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Frightful Presence",
+			"entries": [
+				"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+			]
+		},
+		{
+			"name": "Acid Breath {@recharge 5}",
+			"entries": [
+				"The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 18} Dexterity saving throw, taking 54 ({@damage 12d8}) acid damage on a failed save, or half as much damage on a successful one."
+			]
+		}
+	],
+	"legendary": [
+		{
+			"name": "Detect",
+			"entries": [
+				"The dragon makes a Wisdom (Perception) check."
+			]
+		},
+		{
+			"name": "Tail Attack",
+			"entries": [
+				"The dragon makes a tail attack."
+			]
+		},
+		{
+			"name": "Wing Attack (Costs 2 Actions)",
+			"entries": [
+				"The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a {@dc 19} Dexterity saving throw or take 13 ({@damage 2d6 + 6}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+			]
+		}
+	],
+	"traitTags": [
+		"Amphibious",
+		"Legendary Resistances"
+	],
+	"senseTags": [
+		"B",
+		"SD"
+	],
+	"actionTags": [
+		"Frightful Presence",
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"DR"
+	],
+	"damageTags": [
+		"A",
+		"B",
+		"P",
+		"S"
+	],
+	"miscTags": [
+		"AOE",
+		"MW",
+		"RCH"
+	],
+	"conditionInflict": [
+		"frightened",
+		"prone"
+	],
+	"conditionInflictSpell": [
+		"incapacitated",
+		"prone"
+	]
+}
