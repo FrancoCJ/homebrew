@@ -1,0 +1,107 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Corona",
+				"abbreviation": "CR",
+				"full": "Corona",
+				"url": "https://raw.githubusercontent.com/FrancoCJ/homebrew/main/monsters.json",
+				"authors": [
+					"me"
+				],
+				"convertedBy": [
+					"me"
+				]
+			}
+		],
+		"dateAdded": 1601763363,
+		"dateLastModified": 1601763363
+	},
+	"spell": [
+		{
+			"name": "Twinned Crowns of Myrmoran",
+			"source": "Corona",
+			"level": 20,
+			"school": "E",
+			"subschools": [
+				"Wondrous item, very rare"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"These crowns were enchanted long ago to protect and foster bonds between two long lost kings. Both crowns have the same effects; the gold one is the Crown of Uthtower and the silver one is the Crown of Yarlith.",
+				"While one creature wears a crown, they gain the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"The wearer's AC is increased by 2.",
+						"The wearer is immune to all devices, spells, and effects outside of these crowns or anti-magic zones that detect, influence, or read emotions or thoughts, and the user cannot be detected by divination magic."
+					]
+				},
+				"While two creatures each wear a crown, they both gain the following effects as well as the previous ones:",
+				{
+					"type": "list",
+					"items": [
+						"An empathic link is formed between both wearers, allowing the two to feel each other's emotions. While wearing the crowns, the two are under the Charmed condition to each other, and treat each other as allies and best friends.",
+						"The wearers are not willing to remove the crowns unless both succeed on a DC 15 Charisma saving throw and agree to remove them of their own volition."
+					]
+				},
+				"While identical twins each wear a crown, they both gain the following effects as well as the previous ones:",
+				{
+					"type": "list",
+					"items": [
+						"The wearers' minds coalesce and almost become one. Each wearer can read the mind of the other, and can communicate via their thoughts almost instantly over any distance."
+					]
+				}
+			],
+			"damageResist": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wearer",
+						"source": "Corona"
+					}
+				]
+			}
+		}
+	]
+}
